@@ -1,17 +1,26 @@
-.cabecalho{
-    width: 100px;
-    height: 50px;
+body{
+    font-family: "Roboto", helvetica, arial, sans-serif;
 }
 
-#ID{
-    position: absolute;
-    top: 5%;
-    left: 5%;
+table{
+    border-radius: 3px;
+    border-collapse: collapse;
 }
 
+th{
+    background-color: #1b1e24;
+    color: #d3d3d3;
+    border-bottom: 3px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    text-align: center;
+    font-weight: 100;
+    vertical-align: center;
+    padding: 15px 25px;
+}
 
-#ID{
-    position: absolute;
-    top: 5%;
-    left: 5%;
+td{
+    border: 1px solid #9ea7af;
+    padding: 10px 25px;
+    text-align: left;
+    vertical-align: center;
 }
