@@ -35,7 +35,7 @@ tr{
 
 td{
     border-right: 1px solid #343a45;
-    padding: 10px 24px;
+   padding: 10px 24px; 
     text-align: left;
     vertical-align: center;
     color: #83888b;
@@ -47,8 +47,15 @@ td:last-child{
 
 tr:first-child {
     border-top:none;
-  }
+}
   
 tr:last-child {
     border-bottom:none;
+}
+
+input{
+    background: none;
+    border: solid 1px black;
+    outline: none;
+    font-family: "Roboto", helvetica, arial, sans-serif;
 }
