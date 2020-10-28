@@ -1,14 +1,37 @@
 $(new Document).ready(function(){
-
+    $("#salvar").click(function(){
+        salvarXML();
+    });
 });
 
 function salvarXML(){
 
-    var naoConf = $("naoConf").val();
-    var acaoCor = $("actCor").val();
-    var prazo = $("prazo").val();
-    var entrega = $("entrega").val();
-    var check = $("check").val();
+    for(var i = 0; i < $(".linha_tabela").length; i++){
+        var naoConf = $("#naoConf" + i ).val();
+        var acaoCor = $("#actCor" + i).val();
+        var prazo = $("#prazo" + i).val();
+        var entrega = $("#entrega" + i).val();
+        var check = $("#check" + i).val();
 
-    
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "../php/criaArquivo.php",
+            data: {
+                naoConf : naoConf,
+                acaoCor : acaoCor,
+                prazo : prazo,
+                entrega : entrega,
+                check : check,
+                count : i
+            },
+            success : function(){
+                console.log("Funcionou");
+            },
+            error : function(){
+                console.log("Não funfo");
+            }
+        });
+
+    }   
 }
