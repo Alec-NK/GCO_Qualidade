@@ -6,7 +6,9 @@ body{
 
 table{
     margin: 30px 0px;
-    border-radius: 3px;
+}
+
+#primeira_tabela{
     border-collapse: collapse;
 }
 
@@ -48,7 +50,7 @@ td{
     padding: 10px 24px; 
     text-align: left;
     vertical-align: center;
-    color: #83888b;
+    color: #6c7174;
 }
 
 td:last-child{
@@ -78,4 +80,8 @@ input{
 #salvar:hover{
     background-color: #2e333b;
     transition: .3s;
+}
+
+#porcentagemAd{
+    text-align: center;
 }
