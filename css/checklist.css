@@ -5,6 +5,7 @@ body{
 }
 
 table{
+    margin: 30px 0px;
     border-radius: 3px;
     border-collapse: collapse;
 }
@@ -31,18 +32,7 @@ th:last-child {
 
 tr{
     background-color: #e0e0e0;
-}
-
-td{
-    border-right: 1px solid #343a45;
-   padding: 10px 24px; 
-    text-align: left;
-    vertical-align: center;
-    color: #83888b;
-}
-
-td:last-child{
-    border-right: 0px;
+    border-bottom: solid 1px #343a45;
 }
 
 tr:first-child {
@@ -53,9 +43,39 @@ tr:last-child {
     border-bottom:none;
 }
 
+td{
+    border-right: solid 1px #343a45;
+    padding: 10px 24px; 
+    text-align: left;
+    vertical-align: center;
+    color: #83888b;
+}
+
+td:last-child{
+    border-right: 0px;
+}
+
 input{
     background: none;
     border: solid 1px black;
     outline: none;
     font-family: "Roboto", helvetica, arial, sans-serif;
+}
+
+#salvar{
+    background-color: #1b1e24;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #9ea7af;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    margin: 40px 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#salvar:hover{
+    background-color: #2e333b;
+    transition: .3s;
 }

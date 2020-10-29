@@ -25,7 +25,7 @@
 
     $xml->appendChild($xml_dadosTabela);
 
-    $xml->save("'./xml/dadosLinha" + $count + ".xml'");
+    $xml->save("../xml/linhas/dadosLinha".$count.".xml");
 
     $msg = "Deu certo!";
     echo json_encode($msg);
