@@ -1,13 +1,13 @@
 <?php
 
-    $caminho = "../xml/linhas";
+    $caminho = "../xml/linhas/";
     $diretorio = dir($caminho);
     $position = 0;
 
     while($arquivo = $diretorio->read()){
 
         if($arquivo != "." && $arquivo != ".."){
-
+            
             $xml_string = file_get_contents("../xml/linhas/".$arquivo);
             $xml_object = simplexml_load_string($xml_string);
 

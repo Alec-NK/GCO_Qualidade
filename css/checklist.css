@@ -5,10 +5,8 @@ body{
 }
 
 table{
-    margin: 30px 0px;
-}
-
-#primeira_tabela{
+    margin: 30px 0px 40px 0px;;
+    box-shadow: 2px 3px 12px rgb(36, 36, 36);
     border-collapse: collapse;
 }
 
@@ -20,12 +18,12 @@ th{
     text-align: center;
     font-weight: 100;
     vertical-align: center;
-    padding: 15px 25px;
+/*    padding: 15px 20px; */
 }
 
 th:first-child {
     border-top-left-radius:3px;
-  }
+}
    
 th:last-child {
     border-top-right-radius:3px;
@@ -47,21 +45,55 @@ tr:last-child {
 
 td{
     border-right: solid 1px #343a45;
-    padding: 10px 24px; 
-    text-align: left;
     vertical-align: center;
-    color: #6c7174;
+    color: #5b5f61;
+    font-size: 15px;
+/*    padding: 10px  20px; */
 }
 
 td:last-child{
     border-right: 0px;
 }
 
+.coluna_ID{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.coluna_perg{
+    padding: 15px 20px;
+}
+
+.coluna_resp{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.coluna_prazo{
+    width: 97px;
+}
+
+.coluna_entrega{
+    width: 97px; 
+}
+
+.coluna_check{
+    width: 120px;
+}
+
 input{
+    display: block;
     background: none;
-    border: solid 1px black;
+    border: none;
     outline: none;
+    padding: 0 10px; 
     font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 14px;
+    color: #5b5f61;
+    margin: 0;
+    width: 100%;
+    line-height: 20px;
+    height: 40px;
 }
 
 #salvar{
@@ -82,6 +114,11 @@ input{
     transition: .3s;
 }
 
+.tabela_porcentagem th, .tabela_porcentagem td{
+    padding: 15px 20px;
+}
+
 #porcentagemAd{
     text-align: center;
 }
+

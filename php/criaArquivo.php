@@ -25,7 +25,12 @@
 
     $xml->appendChild($xml_dadosTabela);
 
-    $xml->save("../xml/linhas/dadosLinha".$count.".xml");
+    if($count < 10){
+        $xml->save("../xml/linhas/dadosLinha0".$count.".xml");
+    }
+    else{
+        $xml->save("../xml/linhas/dadosLinha".$count.".xml");
+    }
 
     $msg = "Deu certo!";
     echo json_encode($msg);

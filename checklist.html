@@ -10,53 +10,142 @@
         <table id="primeira_tabela">
             <thead>
                 <tr>
-                    <th> ID </th>
-                    <th> Pergunta </th>
-                    <th> Responsável </th>
-                    <th> Não conformidade </th>
-                    <th> Ação corretiva </th>
-                    <th> Prazo </th>
-                    <th> Entrega </th>
-                    <th> Check </th>
+                    <th class="coluna_ID"> ID </th>
+                    <th class="coluna_perg"> Pergunta </th>
+                    <th class="coluna_resp"> Responsável </th>
+                    <th class="coluna_nConfm"> Não conformidade </th>
+                    <th class="coluna_corretiva"> Ação corretiva </th>
+                    <th class="coluna_prazo"> Prazo </th>
+                    <th class="coluna_entrega"> Entrega </th>
+                    <th class="coluna_check"> Check </th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="linha_tabela">
-                    <td>1</td>
-                    <td>Pergunta?</td>
-                    <td>Alguém</td>
-                    <td><input type="text" id="naoConf0"></td>
-                    <td><input type="text" id="actCor0"></td>
-                    <td><input type="text" id="prazo0"></td>
-                    <td><input type="text" id="entrega0"></td>
-                    <td><input type="text" id="check0"></td>
+                    <td class="coluna_ID">1</td>
+                    <td class="coluna_perg">Sistema de gerencia de configuração é estabelecido?</td>
+                    <td class="coluna_resp">EDD</td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf0"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor0"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo0"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega0"></td>
+                    <td class="coluna_check"><input type="text" id="check0"></td>
                 </tr>
                 <tr class="linha_tabela">
-                    <td>2</td>
-                    <td>Pergunta?</td>
-                    <td>Alguém</td>
-                    <td><input type="text" id="naoConf1"></td>
-                    <td><input type="text" id="actCor1"></td>
-                    <td><input type="text" id="prazo1"></td>
-                    <td><input type="text" id="entrega1"></td>
-                    <td><input type="text" id="check1"></td>
+                    <td class="coluna_ID">2</td>
+                    <td class="coluna_perg">Sistema de gerencia de configuração é mantido?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf1"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor1"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo1"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega1"></td>
+                    <td class="coluna_check"><input type="text" id="check1"></td>
                 </tr>
                 <tr class="linha_tabela">
-                    <td>2</td>
-                    <td>Pergunta?</td>
-                    <td>Alguém</td>
-                    <td><input type="text" id="naoConf2"></td>
-                    <td><input type="text" id="actCor2"></td>
-                    <td><input type="text" id="prazo2"></td>
-                    <td><input type="text" id="entrega2"></td>
-                    <td><input type="text" id="check2"></td>
+                    <td class="coluna_ID">3</td>
+                    <td class="coluna_perg">Os critérios dos itens de configuração foram descritos no <br>
+                                            Plano de Gerência de Configuração?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf2"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor2"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo2"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega2"></td>
+                    <td class="coluna_check"><input type="text" id="check2"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">4</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf3"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor3"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo3"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega3"></td>
+                    <td class="coluna_check"><input type="text" id="check3"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">5</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf4"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor4"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo4"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega4"></td>
+                    <td class="coluna_check"><input type="text" id="check4"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">6</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf5"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor5"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo5"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega5"></td>
+                    <td class="coluna_check"><input type="text" id="check5"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">7</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf6"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor6"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo6"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega6"></td>
+                    <td class="coluna_check"><input type="text" id="check6"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">8</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf7"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor7"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo7"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega7"></td>
+                    <td class="coluna_check"><input type="text" id="check7"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">9</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf8"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor8"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo8"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega8"></td>
+                    <td class="coluna_check"><input type="text" id="check8"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">10</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf9"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor9"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo9"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega9"></td>
+                    <td class="coluna_check"><input type="text" id="check9"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">11</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf10"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor10"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo10"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega10"></td>
+                    <td class="coluna_check"><input type="text" id="check10"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">12</td>
+                    <td class="coluna_perg"></td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><input type="text" id="naoConf11"></td>
+                    <td class="coluna_corretiva"><input type="text" id="actCor11"></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo11"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega11"></td>
+                    <td class="coluna_check"><input type="text" id="check11"></td>
                 </tr>
             </tbody>
         </table>
 
-        <button id="salvar">Salvar</button>
-
-        <table>
+        <table class="tabela_porcentagem">
             <thead>
                 <tr>
                     <th>Porcentagem de Aderência</th>
@@ -69,33 +158,7 @@
             </tbody>
         </table>
 
-
-    <!--    
-        <div id="">
-            <div class="cabecalho" id="ID"> ID </div>
-            <div class="cabecalho" id="Pergunta"> Pergunta </div>
-            <div class="cabecalho" id="Completo"> Check </div>
-            <div class="cabecalho" id="Não conformidade"> Não conformidade </div>
-            <div class="cabecalho" id="Ação corretiva"> Ação corretiva </div>
-            <div class="cabecalho" id="Responsavel"> Responsavel </div>
-            <div class="cabecalho" id="Processo"> Processo </div>
-        </div> 
-
-
-        <div>
-            <div><h2>1</h2></div>
-            <div><input type="lable" placeholder="Digite a pergunta"></div>
-            <div><input type="checkbox"></div>
-            <div><input type="checkbox"></div>
-            <div><input type="lable" placeholder="Explique a não conformidade"></div>
-            <div><input type="lable" placeholder="Ação corretiva"></div>
-            <div><input type="lable" placeholder="Responsavel"></div>
-            <div><input type="lable" placeholder="Processo Ex: ITP"></div>
-        </div>
-        <div>
-            <div><h1>Porcentagem de aderência</h1></div>
-        </div>
-    -->
+        <button id="salvar">Salvar</button>
 
     </body>
 </html>

@@ -73,7 +73,7 @@ function porcentagemAderencia(){
         
         var check_tratado = $("#check" + i).val().toLowerCase().replace(/[áàâã]/,'a');
 
-        if(check_tratado == "nao se aplica" || check_tratado == "nao aplica"){
+        if(check_tratado == "nao se aplica" || check_tratado == "nao aplica" || check_tratado == ""){
             total -= 1;
         }
         else if(check_tratado == "sim"){
