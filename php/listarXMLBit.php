@@ -1,6 +1,6 @@
 <?php
 
-    $caminho = "../xml/github/";
+    $caminho = "../xml/bitbucket/";
     $diretorio = dir($caminho);
     $position = 0;
 
@@ -8,7 +8,7 @@
 
         if($arquivo != "." && $arquivo != ".."){
             
-            $xml_string = file_get_contents("../xml/github/".$arquivo);
+            $xml_string = file_get_contents("../xml/bitbucket/".$arquivo);
             $xml_object = simplexml_load_string($xml_string);
 
             $dados[$position] ["naoConform"] = trim($xml_object->NaoConformidade);

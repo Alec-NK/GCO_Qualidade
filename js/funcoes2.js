@@ -24,7 +24,7 @@ function salvarXML(){
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "./php/criaArquivo.php",
+            url: "../php/criaArquivoBit.php",
             data: {
                 naoConf : naoConf,
                 acaoCor : acaoCor,
@@ -49,7 +49,7 @@ function listarDadosXML(){
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "./php/listarXML.php",
+        url: "../php/listarXMLBit.php",
         success : function(dadosXML){
 
             for(var i = 0; i < $(".linha_tabela").length; i++){
@@ -95,7 +95,7 @@ function porcentagemAderencia(){
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "./php/salvarPorcentagem.php",
+        url: "../php/salvarPorcentagemBit.php",
         data: {
             porcAderencia: porcentagem_final
         },
@@ -114,7 +114,7 @@ function listarPorcentagem(){
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "./php/listarPorcentagem.php",
+        url: "../php/listarPorcentagemBit.php",
         success : function(info){
             console.log(info)
 

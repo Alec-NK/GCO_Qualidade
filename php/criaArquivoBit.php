@@ -26,10 +26,10 @@
     $xml->appendChild($xml_dadosTabela);
 
     if($count < 10){
-        $xml->save("../xml/github/dadosLinha0".$count.".xml");
+        $xml->save("../xml/bitbucket/bitbucket0".$count.".xml");
     }
     else{
-        $xml->save("../xml/github/dadosLinha".$count.".xml");
+        $xml->save("../xml/bitbucket/bitbucket".$count.".xml");
     }
 
     $msg = "Deu certo!";

@@ -117,6 +117,7 @@ textarea{
     resize: none;
     font-family: "Roboto", helvetica, arial, sans-serif;
     font-size: 14px;
+    padding: 10px;
     color: #5b5f61;
     margin: 0;
     width: 100%;
@@ -128,27 +129,9 @@ textarea{
     text-align: center;
 }
 
-#salvar{
-    background-color: #1b1e24;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    color: #9ea7af;
-    font-family: "Roboto", helvetica, arial, sans-serif;
-    margin: 40px 20px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-#salvar:hover{
-    background-color: #2e333b;
-    transition: .3s;
-}
-
 .tabela_legendas{
     position: absolute;
-    margin: 0px 0px;
+    margin: 0px 0px 70px 0px;
 }
 
 .tabela_legendas th{
@@ -167,7 +150,7 @@ textarea{
 
 #tabAder{
     position: relative;
-    margin: 0px 350px;   
+    margin: 0px 0px 0px 400px;   
 }
 
 .tabela_porcentagem th{
@@ -219,6 +202,26 @@ textarea{
     text-align: center;
     font-weight: 100;
     vertical-align: center;
+}
+
+
+#salvar{
+    position: absolute;
+    margin:  -70px 0px 0px 750px;
+    background-color: #1b1e24;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #9ea7af;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#salvar:hover{
+    background-color: #2e333b;
+    transition: .3s;
 }
 
 /* -------------------------------- */
