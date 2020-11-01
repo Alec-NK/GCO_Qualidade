@@ -7,7 +7,8 @@
         <script src="js/funcoes.js"></script>
     </head>
     <body>
-        <table id="primeira_tabela">
+        <div id="titulo">Tabela de Não Conformidade - GCO</div>
+        <table class="tabela_principal">
             <thead>
                 <tr>
                     <th class="coluna_ID"> ID </th>
@@ -23,129 +24,274 @@
             <tbody>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">1</td>
-                    <td class="coluna_perg">Sistema de gerencia de configuração é estabelecido?</td>
+                    <td class="coluna_perg">O sistema de gerência de configuração foi executado de <br> forma manual?</td>
                     <td class="coluna_resp">EDD</td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf0"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor0"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf0" maxlength="64"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor0"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo0"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega0"></td>
-                    <td class="coluna_check"><input type="text" id="check0"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check0"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">2</td>
-                    <td class="coluna_perg">Sistema de gerencia de configuração é mantido?</td>
+                    <td class="coluna_perg">Sistema de gerencia de configuração é estabelecido?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf1"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor1"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf1"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor1"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo1"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega1"></td>
-                    <td class="coluna_check"><input type="text" id="check1"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check1"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">3</td>
-                    <td class="coluna_perg">Os critérios dos itens de configuração foram descritos no <br>
-                                            Plano de Gerência de Configuração?</td>
+                    <td class="coluna_perg">Sistema de gerencia de configuração é mantido?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf2"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor2"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf2"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor2"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo2"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega2"></td>
-                    <td class="coluna_check"><input type="text" id="check2"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check2"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">4</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">Os critérios dos itens de configuração foram descritos no <br>
+                        Plano de Gerência de Configuração?</td></td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf3"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor3"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf3"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor3"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo3"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega3"></td>
-                    <td class="coluna_check"><input type="text" id="check3"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check3"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">5</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">Os itens de configuração são identificados com base em <br> critérios estabelecidos?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf4"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor4"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf4"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor4"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo4"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega4"></td>
-                    <td class="coluna_check"><input type="text" id="check4"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check4"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">6</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">Os itens de configuração sujeitos a um controle formal <br> são colocados sob baseline?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf5"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor5"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf5"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor5"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo5"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega5"></td>
-                    <td class="coluna_check"><input type="text" id="check5"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check5"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">7</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">Existe mapeamento entre as baslines e os itens de <br> configuração?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf6"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor6"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf6"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor6"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo6"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega6"></td>
-                    <td class="coluna_check"><input type="text" id="check6"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check6"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">8</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">A situação dos itens de configuração e das baselines é <br> registrada?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf7"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor7"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf7"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor7"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo7"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega7"></td>
-                    <td class="coluna_check"><input type="text" id="check7"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check7"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">9</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">A situação dos itens de configuração e das baselines é <br> disponibilizada?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf8"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor8"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf8"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor8"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo8"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega8"></td>
-                    <td class="coluna_check"><input type="text" id="check8"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check8"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">10</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">É possivel recuperar o conteudo das baselines geradas?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf9"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor9"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf9"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor9"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo9"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega9"></td>
-                    <td class="coluna_check"><input type="text" id="check9"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check9"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">11</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">As modificações em itens de configuração são controladas?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf10"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor10"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf10"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor10"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo10"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega10"></td>
-                    <td class="coluna_check"><input type="text" id="check10"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check10"></td>
                 </tr>
                 <tr class="linha_tabela">
                     <td class="coluna_ID">12</td>
-                    <td class="coluna_perg"></td>
+                    <td class="coluna_perg">É solicitado ao responsável quando ocorre uma mudança <br> nos itens de configuração?</td>
                     <td class="coluna_resp"></td>
-                    <td class="coluna_nConfm"><input type="text" id="naoConf11"></td>
-                    <td class="coluna_corretiva"><input type="text" id="actCor11"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf11"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor11"></textarea></td>
                     <td class="coluna_prazo"><input type="text" id="prazo11"></td>
                     <td class="coluna_entrega"><input type="text" id="entrega11"></td>
-                    <td class="coluna_check"><input type="text" id="check11"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check11"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">13</td>
+                    <td class="coluna_perg">A implementação da solicitação de mudança segue algum <br> dos passos pedidos?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf12"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor12"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo12"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega12"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check12"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">14</td>
+                    <td class="coluna_perg">O armazenamento de itens de configuração e baselines <br> são controlados?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf13"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor13"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo13"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega13"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check13"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">15</td>
+                    <td class="coluna_perg">O  manuseio de itens de configuração e baselines são <br> controlados?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf14"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor14"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo14"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega14"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check14"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">16</td>
+                    <td class="coluna_perg">A liberação de itens de configuração e baselines são <br> controlados?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf15"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor15"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo15"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega15"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check15"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">17</td>
+                    <td class="coluna_perg">Auditorias de configuração são realizadas?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf16"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor16"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo16"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega16"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check16"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">18</td>
+                    <td class="coluna_perg">As baselines e os itens de configuração estão íntegros?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf17"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor17"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo17"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega17"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check17"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">19</td>
+                    <td class="coluna_perg">As baselines e os itens de configuração estão completos?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf18"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor18"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo18"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega18"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check18"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">20</td>
+                    <td class="coluna_perg">As baselines e os itens de configuração estão consistentes?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf19"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor19"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo19"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega19"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check19"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">21</td>
+                    <td class="coluna_perg">Foram feitas as perguntas do ITSMF na auditoria?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf20"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor20"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo20"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega20"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check20"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">22</td>
+                    <td class="coluna_perg">A auditoria foi feita por alguem que não esteve presente <br>
+                        no desenvolvimento?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf21"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor21"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo21"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega21"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check21"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">23</td>
+                    <td class="coluna_perg">Foi feita a auditoria funcional?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf22"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor22"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo22"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega22"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check22"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">24</td>
+                    <td class="coluna_perg">Foi feita a auditoria fisica?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf23"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor23"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo23"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega23"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check23"></td>
+                </tr>
+                <tr class="linha_tabela">
+                    <td class="coluna_ID">25</td>
+                    <td class="coluna_perg">As informações de itens de configuração são comunicadas <br>
+                        às partes interessadas?</td>
+                    <td class="coluna_resp"></td>
+                    <td class="coluna_nConfm"><textarea id="naoConf24"></textarea></td>
+                    <td class="coluna_corretiva"><textarea id="actCor24"></textarea></td>
+                    <td class="coluna_prazo"><input type="text" id="prazo24"></td>
+                    <td class="coluna_entrega"><input type="text" id="entrega24"></td>
+                    <td class="coluna_check"><input type="text" class="classeCheck" id="check24"></td>
                 </tr>
             </tbody>
         </table>
 
-        <table class="tabela_porcentagem">
+        <table class="tabela_legendas">
+            <thead>
+                <tr>
+                    <th>Legenda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>EDD - Equipe de Desenvolvimento</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="tabAder" class="tabela_porcentagem">
             <thead>
                 <tr>
                     <th>Porcentagem de Aderência</th>

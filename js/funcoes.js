@@ -119,6 +119,21 @@ function listarPorcentagem(){
             console.log(info)
 
             $("#porcentagemAd").text(info[0].porcentagem + "%");
+
+            if(info[0].porcentagem == 100 || info[0].porcentagem >= 90 ){
+                console.log(info[0].porcentagem);
+                $("#tabAder").addClass("tabela_verde");
+            }
+            else if(info[0].porcentagem == 89 || info[0].porcentagem >= 65 ){
+                $("#tabAder").addClass("tabela_amarelo");
+            }
+            else if(info[0].porcentagem <= 64 || info[0].porcentagem <= 0){
+                $("#tabAder").addClass("tabela_vermelho");
+            }
+            else{
+                $("#tabAder").addClass("tabela_cinza");
+            }
+
         },
         error : function(){
             console.log("Erro na listagem");
