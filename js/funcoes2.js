@@ -1,5 +1,12 @@
 $(new Document).ready(function(){
 
+    $("#bBit").removeClass("bStyle").addClass("bStyleAfter");
+    $("#bGit").removeClass("bStyleAfter").addClass("bStyle");
+
+    $("#bGit").click(function(){
+        window.location.href = "../checklist.html";
+    });
+
     listarDadosXML();
     listarPorcentagem();
 

@@ -1,5 +1,12 @@
 $(new Document).ready(function(){
 
+    $("#bGit").removeClass("bStyle").addClass("bStyleAfter");
+    $("#bBit").removeClass("bStyleAfter").addClass("bStyle");
+
+    $("#bBit").click(function(){
+        window.location.href = "pages/bitbucket.html";
+    });
+
     listarDadosXML();
     listarPorcentagem();
 
@@ -89,7 +96,7 @@ function porcentagemAderencia(){
         var porcentagem_individual = 100 / total;
         var porcentagem_nao = qtd_nao * porcentagem_individual;
         var porcentagem_aderencia = 100 - porcentagem_nao;
-        var porcentagem_final = parseInt(porcentagem_aderencia);
+        var porcentagem_final = parseInt(porcentagem_aderencia); 
     }
 
     $.ajax({
